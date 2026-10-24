@@ -1,70 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IMPACT | Learning Health Systems</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: #1f2933;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 80px 30px;
-    }
-
-    h1 {
-      font-size: 5rem;
-      margin-bottom: 10px;
-      color: #17365d;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: 400;
-      color: #52657a;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.7;
-      max-width: 750px;
-    }
-
-    .intro {
-      margin-top: 70px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMPACT connects clinically meaningful healthcare data around episodes and time, helping people improve care by measuring what matters.">
+  <meta name="theme-color" content="#102A43">
+  <title>IMPACT | Measuring what matters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="IMPACT home">
+      <img src="assets/impact-logo.svg" alt="IMPACT">
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#model">The model</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h1>IMPACT</h1>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">A learning health system in development</p>
+        <img class="hero-logo" src="assets/impact-logo.svg" alt="IMPACT">
+        <h1>Helping people improve care by measuring what matters.</h1>
+        <p class="intro">IMPACT connects routinely collected healthcare data around clinically meaningful episodes and time, creating consistent views of patients, diseases and populations.</p>
+        <a class="button" href="#about">Explore the approach</a>
+      </div>
 
-    <h2>Learning Health Systems</h2>
-
-    <section class="intro">
-
-      <h2>Turning healthcare data into better care</h2>
-
-      <p>
-        IMPACT is developing the infrastructure and methods needed
-        to transform routinely collected healthcare data into
-        knowledge that supports research, improvement and better
-        patient care.
-      </p>
-
+      <div class="linkage-mark" aria-label="Diagram showing two distinct episode structures connected through clinical meaning">
+        <div class="dataset dataset-one"><span>Episode</span></div>
+        <div class="meaning"><span>Clinical meaning</span><i></i></div>
+        <div class="dataset dataset-two"><span>Episode</span></div>
+        <p>Distinct data structures.<br>Clinically mediated connections.<br>Mapped through time.</p>
+      </div>
     </section>
 
+    <section class="purpose" id="about">
+      <p class="section-label">01 / Purpose</p>
+      <div>
+        <h2>Connect the clinical story,<br>not just the data.</h2>
+        <p>Healthcare data are produced across systems, organisations and points in time. IMPACT provides a shared episode-based structure through which those observations can be connected without losing their clinical context.</p>
+      </div>
+    </section>
+
+    <section class="model" id="model">
+      <div class="section-heading">
+        <p class="section-label">02 / The model</p>
+        <h2>One structure. Multiple perspectives.</h2>
+      </div>
+      <div class="perspectives">
+        <article><span>01</span><h3>Patients</h3><p>Follow longitudinal experience across episodes, conditions and settings.</p></article>
+        <article><span>02</span><h3>Episodes</h3><p>Give clinical observations a defined context and position in time.</p></article>
+        <article><span>03</span><h3>Diseases</h3><p>Understand how conditions interact with care over the longer term.</p></article>
+        <article><span>04</span><h3>Populations</h3><p>Create comparable groups for research, evaluation and improvement.</p></article>
+      </div>
+    </section>
+
+    <section class="principle">
+      <div class="principle-copy">
+        <p class="section-label">03 / From data to action</p>
+        <h2>Data does not improve care.<br><em>People do.</em></h2>
+      </div>
+      <ol>
+        <li><strong>Structure</strong><span>Consistent definitions make observations comparable.</span></li>
+        <li><strong>Connect</strong><span>Clinical knowledge establishes meaningful relationships.</span></li>
+        <li><strong>Learn</strong><span>Patients, clinicians, analysts and researchers interpret the evidence.</span></li>
+        <li><strong>Improve</strong><span>Learning returns to care, where people can act on it.</span></li>
+      </ol>
+    </section>
+
+    <section class="holding" id="contact">
+      <p class="section-label">IMPACT-LHS</p>
+      <h2>Our full website is in development.</h2>
+      <p>IMPACT is building the infrastructure and partnerships needed to support clinically meaningful learning from routine healthcare data.</p>
+      <a href="mailto:contact@impact-lhs.com">contact@impact-lhs.com</a>
+    </section>
   </main>
 
+  <footer>
+    <img src="assets/impact-logo.svg" alt="IMPACT">
+    <p>Integrated Metrics for Analytics and Clinical Tracking</p>
+    <p>© <span id="year"></span> IMPACT</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
